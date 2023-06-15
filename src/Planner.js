@@ -37,14 +37,12 @@ const Planner = ({
                 <input placeholder='house frontage' value={peoplePerHouse} onChange={event => setPeoplePerHouse(event.target.value)} />
             </div>
             <div>
-                <p>Residential building percentage: </p>
+                <p>Percentage of total buildable lots used by housing: </p>
                 <input placeholder='Residential building percentage' value={residentialArea} onChange={event => setResidentialArea(event.target.value)} />
-                <p> {"(Percentage of total buildable lots used by housing)"} </p>
             </div>
             <div>
-                <p>Park percentage: </p>
+                <p>Percentage of total neighborhood area used by parks: </p>
                 <input placeholder='Park percentage' value={parkArea} onChange={event => setParkArea(event.target.value)} />
-                <p> {"(Percentage of total neighborhood area used by parks)"} </p>
             </div>
             
         </div>
