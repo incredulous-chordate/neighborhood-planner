@@ -18,31 +18,31 @@ const Planner = ({
         <div className='Inputs'>
             <div>
                 <p>Block height: </p>
-                <input placeholder='block height' text={height} onChange={event => setHeight(event.target.value)} value={"40"} />
+                <input placeholder='block height' value={height} onChange={event => setHeight(event.target.value)} />
             </div>
             <div>
                 <p>Block width: </p>
-                <input placeholder='block width' text={width} onChange={event => setWidth(event.target.value)} value={"80"} />
+                <input placeholder='block width' value={width} onChange={event => setWidth(event.target.value)} />
             </div>
             <div>
                 <p>Street width: </p>
-                <input placeholder='street width' text={streetWidth} onChange={event => setStreetWidth(event.target.value)} value={"50"} />
+                <input placeholder='street width' value={streetWidth} onChange={event => setStreetWidth(event.target.value)} />
             </div>
             <div>
                 <p>House frontage: </p>
-                <input placeholder='house frontage' text={frontage} onChange={event => setFrontage(event.target.value)} value={"8"} />
+                <input placeholder='house frontage' value={frontage} onChange={event => setFrontage(event.target.value)} />
             </div>
             <div>
                 <p>People per house: </p>
-                <input placeholder='people per house' text={peoplePerHouse} onChange={event => setPeoplePerHouse(event.target.value)} value={"2.2"} />
+                <input placeholder='house frontage' value={peoplePerHouse} onChange={event => setPeoplePerHouse(event.target.value)} />
             </div>
             <div>
-                <p>Portion of total buildable lots used by housing: </p>
-                <input placeholder='Residential portion' text={residentialArea} onChange={event => setResidentialArea(event.target.value)} value={".9"} />
+                <p>Percentage of total buildable lots used by housing: </p>
+                <input placeholder='Residential building percentage' value={residentialArea} onChange={event => setResidentialArea(event.target.value)} />
             </div>
             <div>
-                <p>Portion of total neighborhood area used by parks: </p>
-                <input placeholder='Park portion' text={parkArea} onChange={event => setParkArea(event.target.value)} value={".1"} />
+                <p>Percentage of total neighborhood area used by parks: </p>
+                <input placeholder='Park percentage' value={parkArea} onChange={event => setParkArea(event.target.value)} />
             </div>
             
         </div>

@@ -23,7 +23,7 @@ function App() {
         Constants.canvasWidth / (parseFloat(width) + parseFloat(streetWidth))
     )
     const pixelsFromMeters = pixelsFromScale(scale)
-    const housesPerSide = Math.floor(parseFloat(width)/parseFloat(frontage))
+    const housesPerSide = Math.floor(width/frontage)
     
     return <div className="App">
         <Block 
@@ -36,12 +36,12 @@ function App() {
             peoplePerHouse={peoplePerHouse}
         />
         <Planner 
-            height={height} setHeight={height=>setHeight(parseFloat(height) > 0 ? height : "40")}
-            width={width} setWidth={width=>setWidth(parseFloat(width) > 0 ? width : "80")}
-            streetWidth={streetWidth} setStreetWidth={streetWidth=>setStreetWidth(parseFloat(streetWidth) > 0 ? streetWidth : "5")}
-            frontage={frontage} setFrontage={frontage=>setFrontage(parseFloat(frontage) > 0 ? frontage : "8")}
+            height={height} setHeight={height=>setHeight(height)}
+            width={width} setWidth={width=>setWidth(width)}
+            streetWidth={streetWidth} setStreetWidth={streetWidth=>setStreetWidth(streetWidth)}
+            frontage={frontage} setFrontage={frontage=>setFrontage(frontage)}
             housesPerSide={housesPerSide}
-            peoplePerHouse={peoplePerHouse} setPeoplePerHouse={peoplePerHouse=>setPeoplePerHouse(parseFloat(peoplePerHouse) > 0 ? peoplePerHouse : "2.2")}
+            peoplePerHouse={peoplePerHouse} setPeoplePerHouse={setPeoplePerHouse}
         />
     </div>
 }
