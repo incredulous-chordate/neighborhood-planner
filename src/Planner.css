@@ -1,0 +1,18 @@
+.Planner {
+    margin: 20px;
+}
+
+.Inputs {
+    display: Flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Stats {
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}
