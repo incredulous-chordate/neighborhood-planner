@@ -26,7 +26,7 @@ const Planner = ({
             </div>
             <div>
                 <p>Street width: </p>
-                <input placeholder='street width' text={streetWidth} onChange={event => setStreetWidth(event.target.value)} defaultValue={"50"} />
+                <input placeholder='street width' text={streetWidth} onChange={event => setStreetWidth(event.target.value)} defaultValue={"5"} />
             </div>
             <div>
                 <p>House frontage: </p>
